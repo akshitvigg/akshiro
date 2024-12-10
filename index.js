@@ -11,7 +11,10 @@ const text = figlet.textSync("Hi , I'm Akshit", {
   whitespaceBreak: true,
 });
 
-console.log(` ${ gradient(['pink', 'purple'])('ლ(◉‿◉ ლ)')}`)
+console.log(` 
+  ${ gradient(['pink', 'purple'])('٭(•﹏•)٭')}
+  
+  `)
 
 const gradientText = gradient(["pink", "purple", "cyan"])(text);
 console.log(gradientText);
