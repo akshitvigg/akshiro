@@ -1,24 +1,27 @@
 {
-  "name": "cli-tool",
+  "name": "akshiro",
   "version": "1.0.0",
+  "description": "A CLI tool to showcase Akshit's details",
   "main": "index.js",
-  "bin": {
-    "akshitdev": "index.js"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "type": "module",
-  "keywords": [],
-  "author": "",
+  
+  "scripts": {
+    "start": "node index.js"
+  },
+
+  "keywords": [
+    "cli",
+    "tool",
+    "developer"
+  ],
+  "bin": "./index.js",
+  "author": "Akshit Vig",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "boxen": "^8.0.1",
     "chalk": "^5.3.0",
     "figlet": "^1.8.0",
-    "got": "^14.4.5",
-    "gradient-string": "^3.0.0",
-    "terminal-image": "^3.0.0"
+    "gradient-string": "^3.0.0"
+  
   }
 }
