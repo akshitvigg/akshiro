@@ -16,15 +16,21 @@ console.log(gradientText);
 
 console.log(
   chalk.greenBright(`
-  
   ✔ Loading Akshit's details`)
 );
 
-const details = `
-  ${chalk.bold.blue("name")}                                    ${chalk.yellow(
-  "Akshit Vig"
-)} 
-  
-  `;
+const personelText = figlet.textSync(`PERSONAL DETAILS`, {
+  font: "Mini",
+  horizontalLayout: "fitted",
+  width: "80",
+});
+const gradientperText = gradient(["gray", "white"])(personelText);
+console.log(gradientperText);
 
-console.log(details);
+const details = `
+  ${chalk.bold.blue("Name")}                           ${chalk.yellow("Akshit Vig")} 
+  ${chalk.bold.blue("Status")}                         ${chalk.yellow("Student")}
+  ${chalk.bold.blue("Github")}                         ${chalk.yellow("https://github.com/akshitvigg")}
+  ${chalk.bold.blue("X")}                              ${chalk.yellow("https://x.com/AkshitVig4")}`;
+
+console.log(boxen(details, { padding:1, borderStyle: "double" }));
