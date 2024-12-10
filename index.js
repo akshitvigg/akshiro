@@ -14,6 +14,12 @@ const text = figlet.textSync("Hi , I'm Akshit", {
 const gradientText = gradient(["red", "yellow", "cyan"])(text);
 console.log(gradientText);
 
+console.log(
+  chalk.greenBright(`
+  
+  ✔ Loading Akshit's details`)
+);
+
 const details = `
   ${chalk.bold.blue("name")}                                    ${chalk.yellow(
   "Akshit Vig"
@@ -21,12 +27,4 @@ const details = `
   
   `;
 
-console.log(
-  boxen(details, {
-    padding: 2,
-    margin: 1,
-    borderStyle: "double",
-    borderColor: "blueBright",
-    backgroundColor: "blackBright",
-  })
-);
+console.log(details);
