@@ -30,8 +30,9 @@ console.log(gradientperText);
 const details =` ${chalk.bold.blue("Name")}          -                ${chalk.yellow("Akshit Vig")}
  ${chalk.bold.blue("Status")}        -                ${chalk.yellow("Student")}
  ${chalk.bold.blue("Github")}        -                ${chalk.yellow("https://github.com/akshitvigg")}
- ${chalk.bold.blue("X")}             -                ${chalk.yellow("https://x.com/AkshitVig4")}`;
+ ${chalk.bold.blue("X")}             -                ${chalk.yellow("https://x.com/AkshitVig4")}
+ ${chalk.bold.blue("Email")}             -            ${chalk.yellow("akshitvig48@gmail.com")}`;
 
  
  
-console.log(boxen(details, { padding:1, borderStyle: "bold" }));
+console.log(boxen(details, { padding:1, borderStyle: "single", backgroundColor: '#062703' }));
