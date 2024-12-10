@@ -16,7 +16,8 @@ console.log(gradientText);
 
 console.log(
   chalk.greenBright(`
-  ✔ Loading Akshit's details`)
+  ✔ Loading Akshit's details
+  `)
 );
 
 const personelText = figlet.textSync(`PERSONAL DETAILS`, {
