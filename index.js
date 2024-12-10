@@ -35,4 +35,4 @@ const details =` ${chalk.bold.blue("Name")}          -                ${chalk.ye
 
  
  
-console.log(boxen(details, { padding:1, borderStyle: "single", backgroundColor: '#062703' }));
+console.log(boxen(details, { padding:1, borderStyle: "bold", backgroundColor: '#0d4e06' }));
