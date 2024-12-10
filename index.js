@@ -43,7 +43,8 @@ const skillText = figlet.textSync('SKILLS',{
 
 const gradSkilltext = gradient(['gray', 'white'])(skillText)
 
-console.log(gradSkilltext)
+console.log(`
+  ${gradSkilltext}`)
 
 const skillsDetails = ` ${chalk.bold.blue("Languages")}        -               ${chalk.yellow("Java, C, C++, Python, Javascript, Typescript")}
  ${chalk.bold.blue("Frameworks")}       -               ${chalk.yellow("React, Flask ")}
