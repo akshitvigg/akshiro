@@ -2,8 +2,8 @@ import chalk from "chalk";
 import figlet from "figlet";
 import boxen from "boxen";
 
-figlet.textSync(
-  "Akshit.",
+figlet.text(
+  "もしもし.",
   {
     font: "Katakana",
     horizontalLayout: "default",
