@@ -4,14 +4,14 @@ import boxen from "boxen";
 import gradient from "gradient-string";
 
 const text = figlet.textSync("Hi , I'm Akshit", {
-  font: "Small",
+  font: "Standard",
   verticalLayout: "default",
   horizontalLayout: "default",
   width: 80,
   whitespaceBreak: true,
 });
 
-const gradientText = gradient(["red", "yellow", "cyan"])(text);
+const gradientText = gradient(["pink", "purple", "cyan"])(text);
 console.log(gradientText);
 
 console.log(
@@ -20,9 +20,9 @@ console.log(
 );
 
 const personelText = figlet.textSync(`PERSONAL DETAILS`, {
-  font: "Mini",
+  font: "Small",
   horizontalLayout: "fitted",
-  width: "80",
+  width: "100",
 });
 const gradientperText = gradient(["gray", "white"])(personelText);
 console.log(gradientperText);
@@ -38,9 +38,18 @@ const personelDetails =` ${chalk.bold.blue("Name")}          -                ${
 console.log(boxen(personelDetails, { padding:1, borderStyle: "bold", backgroundColor: '#0d4e06', title:"About me ",  titleAlignment: 'center'}));
 
 const skillText = figlet.textSync('SKILLS',{
-  font : 'Standard'
+  font : 'Small'
 })
 
 const gradSkilltext = gradient(['gray', 'white'])(skillText)
 
 console.log(gradSkilltext)
+
+const skillsDetails = ` ${chalk.bold.blue("Languages")}          -          ${chalk.yellow("Java, C, C++, Python,Javascript, Typescript")}
+ ${chalk.bold.blue("Frameworks")}        -               ${chalk.yellow("React, Flask ")}
+ ${chalk.bold.blue("Technologies")}        -               ${chalk.yellow("Express, Nodejs, WebSocket, Prisma")}
+ ${chalk.bold.blue("Databases")}             -               ${chalk.yellow("MongoDb, PostgreSQL, MySQL")}
+ ${chalk.bold.blue("Others")}             -           ${chalk.yellow("Docker, Linux, Git")}`;
+
+
+ console.log(boxen (skillsDetails, {padding:1 , borderStyle: 'bold' ,backgroundColor: '#0d4e06' }))
