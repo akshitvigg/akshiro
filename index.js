@@ -6,8 +6,8 @@ import gradient from "gradient-string";
 const text = figlet.textSync("Hi , I'm Akshit", {
   font: "Standard",
   verticalLayout: "default",
-  horizontalLayout: "default",
-  width: 80,
+  horizontalLayout: "full",
+  width: 150,
   whitespaceBreak: true,
 });
 
@@ -41,7 +41,7 @@ const personelDetails =` ${chalk.bold.blue("Name")}          -                ${
 
  
  
-console.log(boxen(personelDetails, { padding:1, borderStyle: "bold", backgroundColor: '#0d4e06', title:"About me ",  titleAlignment: 'center'}));
+console.log(boxen(personelDetails, { padding:1, borderStyle: "bold", backgroundColor: '#0d4e06',  titleAlignment: 'center'}));
 
 const skillText = figlet.textSync('SKILLS',{
   font : 'Small'
@@ -58,7 +58,7 @@ const skillsDetails = ` ${chalk.bold.blue("Languages")}        -               $
  ${chalk.bold.blue("Others")}           -               ${chalk.yellow("Docker, Linux, Git")}`;
 
 
- console.log(boxen (skillsDetails, {padding:1 , borderStyle: 'bold' ,backgroundColor: '#0d4e06' }))
+ console.log(boxen (skillsDetails, {padding:1 , borderStyle: 'bold' ,backgroundColor: '#0d4e06' ,}))
 
 
  const msgTxt = figlet.textSync("MESSAGE",{
