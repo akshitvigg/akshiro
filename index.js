@@ -1,23 +1,32 @@
 import chalk from "chalk";
 import figlet from "figlet";
 import boxen from "boxen";
-import terminalImage from "terminal-image";
-import got from "got";
+import gradient from "gradient-string";
 
-// figlet.text(
-//   "もしもし.",
-//   {
-//     font: "Katakana",
-//     horizontalLayout: "default",
-//     verticalLayout: "default",
-//     width: 80,
-//     whitespaceBreak: true,
-//   },
-//   (err, data) => {
-//     if (err) {
-//       console.log("something went wrong", err);
-//       return;
-//     }
-//     console.log(data);
-//   }
-// );
+const text = figlet.textSync("Hi , I'm Akshit", {
+  font: "Small",
+  verticalLayout: "default",
+  horizontalLayout: "default",
+  width: 80,
+  whitespaceBreak: true,
+});
+
+const gradientText = gradient(["red", "yellow", "cyan"])(text);
+console.log(gradientText);
+
+const details = `
+  ${chalk.bold.blue("name")}                                    ${chalk.yellow(
+  "Akshit Vig"
+)} 
+  
+  `;
+
+console.log(
+  boxen(details, {
+    padding: 2,
+    margin: 1,
+    borderStyle: "double",
+    borderColor: "blueBright",
+    backgroundColor: "blackBright",
+  })
+);
