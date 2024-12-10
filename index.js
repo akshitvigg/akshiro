@@ -59,3 +59,14 @@ const skillsDetails = ` ${chalk.bold.blue("Languages")}        -               $
 
 
  console.log(boxen (skillsDetails, {padding:1 , borderStyle: 'bold' ,backgroundColor: '#0d4e06' }))
+
+
+ const msgTxt = figlet.textSync("MESSAGE",{
+  font : "Small",
+  horizontalLayout:'fitted'
+ })
+ const gradMsgtxt = gradient(['gray', 'white'])(msgTxt)
+ console.log(`\n${gradMsgtxt}`)
+
+ const lastTxt = chalk.yellowBright(`Akshit is open for opportunities, ready to bring value to your team and take things to the next level. Thanks for checking out my cli!`)
+ console.log(boxen(lastTxt, {borderStyle :'bold', padding:1, backgroundColor:'#0d4e06'}))
