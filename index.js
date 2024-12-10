@@ -21,6 +21,3 @@ import got from "got";
 //     console.log(data);
 //   }
 // );
-
-const body = await got();
-console.log(await terminalImage.file);
