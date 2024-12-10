@@ -11,6 +11,8 @@ const text = figlet.textSync("Hi , I'm Akshit", {
   whitespaceBreak: true,
 });
 
+console.log(` ${ gradient(['pink', 'purple'])('ლ(◉‿◉ ლ)')}`)
+
 const gradientText = gradient(["pink", "purple", "cyan"])(text);
 console.log(gradientText);
 
@@ -44,8 +46,7 @@ const skillText = figlet.textSync('SKILLS',{
 
 const gradSkilltext = gradient(['gray', 'white'])(skillText)
 
-console.log(`
-  ${gradSkilltext}`)
+console.log(` \n${gradSkilltext}`)
 
 const skillsDetails = ` ${chalk.bold.blue("Languages")}        -               ${chalk.yellow("Java, C, C++, Python, Javascript, Typescript")}
  ${chalk.bold.blue("Frameworks")}       -               ${chalk.yellow("React, Flask ")}
