@@ -35,4 +35,12 @@ const personelDetails =` ${chalk.bold.blue("Name")}          -                ${
 
  
  
-console.log(boxen(details, { padding:1, borderStyle: "bold", backgroundColor: '#0d4e06', title:"About me ",  titleAlignment: 'center'}));
+console.log(boxen(personelDetails, { padding:1, borderStyle: "bold", backgroundColor: '#0d4e06', title:"About me ",  titleAlignment: 'center'}));
+
+const skillText = figlet.textSync('SKILLS',{
+  font : 'Standard'
+})
+
+const gradSkilltext = gradient(['gray', 'white'])(skillText)
+
+console.log(gradSkilltext)
