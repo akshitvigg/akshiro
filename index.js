@@ -45,7 +45,7 @@ const personelDetails = ` ${chalk.bold.blue(
   "https://x.com/AkshitVig4"
 )}
  ${chalk.bold.blue("Portfolio")}     -                ${chalk.yellow(
-  "https://akshitt.vercel.app"
+  "https://akshitt.me"
 )}
  ${chalk.bold.blue("Email")}         -                ${chalk.yellow(
   "akshitvig48@gmail.com"
